@@ -1,14 +1,25 @@
-Proyecto web en Python + Flask.
+Flores Amarillas 🌼
 
-Cómo ejecutar:
-1. Instala dependencias:
-   python -m pip install -r requirements.txt
-2. Ejecuta:
-   python app.py
-3. Abre en tu navegador:
-   http://127.0.0.1:5000
+Sitio web en Python + Flask, personalizado para Cachetes.
 
-Esta versión está personalizada para Cachetes y tiene una presentación más exagerada,
-con lluvia continua de flores amarillas, explosiones de flores y un mensaje central.
+Características:
+- Muchas flores amarillas aparecen automáticamente al abrir.
+- Lluvia continua de flores.
+- Explosiones automáticas de flores y partículas.
+- Diseño adaptable a celular y computadora.
 
-Al abrir la página, las flores aparecen automáticamente; no hay que presionar ningún botón.
+Ejecución local:
+1. python -m pip install -r requirements.txt
+2. python app.py
+3. Abre http://127.0.0.1:5000
+
+Despliegue en Railway:
+1. Crea un nuevo proyecto en Railway.
+2. Selecciona Deploy from GitHub Repo.
+3. Elige NoelGom/flores-amarillas.
+4. Railway instalará requirements.txt automáticamente.
+5. El Procfile ejecutará:
+   gunicorn app:app
+6. Genera un dominio público desde Settings / Networking si Railway no lo crea automáticamente.
+
+La aplicación también reconoce automáticamente la variable PORT proporcionada por Railway.
